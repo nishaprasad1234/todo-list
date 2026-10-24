@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MY To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="todo-container">
+
+        <h1>My To-Do List</h1>
+        <button id="darkModeBtn">Dark Mode</button>
+
+        <input type="text" id="taskInput" placeholder="Enter a task">
+
+        <select id="priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+
+        <input type="date" id="dueDate">
+
+        <button id="addTask">Add Task</button>
+
+        <button id="clearAll">Clear All</button>
+
+        <input type="text" id="searchInput" placeholder="Search task...">
+
+        <select id="sortPriority">
+            <option value="default">Default Order</option>
+            <option value="high-low">High to Low</option>
+            <option value="low-high">Low to High</option>
+        </select>
+
+        <select id="filterTask">
+            <option value="all">All Tasks</option>
+            <option value="High">High Priority</option>
+            <option value="Medium">Medium Priority</option>
+            <option value="Low">Low Priority</option>
+            <option value="completed">Completed</option>
+        </select>
+
+        <ul id="taskList"></ul>
+
+       
+<!-- Advanced Edit Form -->
+<div id="editForm" style="display: none;">
+
+    <h2>Edit Task</h2>
+
+    <label for="editTaskInput">Task Name:</label>
+    <input type="text" id="editTaskInput"
+           placeholder="Enter task name">
+
+    <label for="editPriority">Priority:</label>
+    <select id="editPriority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+    </select>
+
+    <label for="editDueDate">Due Date:</label>
+    <input type="date" id="editDueDate">
+
+    <button type="button" id="saveEditBtn">Save Changes</button>
+    <button type="button" id="cancelEditBtn">Cancel</button>
+ </div>
+    <p id="taskCounter">Total Tasks: 0</p>
+    <p id="completedCounter">Completed: 0</p>
+    <p id="remainingCounter">Remaining: 0</p>
+
+</div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html> 
